@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+       {{title}}
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <p class="description">Select your story to begin</p>
+   
+<img id="spurgeon" src={{image}} />
+<!-- src="https://i.pinimg.com/originals/a8/f8/43/a8f843b2e537317f48bb30fd70835593.jpg" -->
+
+<ion-grid>
+ 
+  <ion-col>
+      <button ion-button block color="dark" [navPush]="contentsPage">The Kingdom</button>
+
+  </ion-col>
+</ion-grid>
+
 </ion-content>
